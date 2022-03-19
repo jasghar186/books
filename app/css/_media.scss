@@ -1,0 +1,28 @@
+// for mobile devices
+@mixin mobile {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+
+// for tablets
+@mixin tablets {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// large devices like desktops
+@mixin desktop {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+// extra large devices like large desktops
+@mixin lg-devices {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}

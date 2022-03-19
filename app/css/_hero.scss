@@ -1,0 +1,47 @@
+.hero {
+    background: $bggradient;
+    z-index: 1;
+    .text-container {
+        // background-color: green;
+        @include desktop {
+            padding-left: 5.3em;
+            padding-right: 5.3em;
+        }
+        h1 {
+            color: white;
+            font-size: 2rem;
+            font-size: 8.5vmin;
+            text-transform: uppercase;
+            font-weight: 500;
+            @include mobile {
+                font-size: 2.5rem;
+            }
+            @include tablets {
+              line-height: 63.75px;
+              font-size: 3.31rem;
+          }
+        }
+        p {
+            font-size: 1rem;
+            color: white;
+            font-family: $Rubik;
+        }
+        a {
+            font-family: $Rubik;
+            border-radius: 45px;
+            font-weight: 500;
+        }
+    }
+    .img-container {
+        width: 100%;
+        @include tablets {
+            width: 410px;
+            height: 470px;
+        }
+        img {
+            width: 100%;height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

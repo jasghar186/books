@@ -1,0 +1,16 @@
+* {
+    transition: all .3s;
+}
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+a {
+    font-family: $sans-font;
+}
+h1, h2, h3 {
+    font-family: $Rubik;
+}
+h2 {
+    font-family: $Lobster;
+}

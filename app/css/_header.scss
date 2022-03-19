@@ -1,0 +1,54 @@
+header  {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 2;
+    height: 60px;
+    .navbar-brand {
+        color: white;
+        font-size: 1.04rem;
+        font-weight: 500;
+        i {
+            color: white ;
+            font-size: 2rem;
+            padding-right: 0.7rem;
+            font-weight: 900;
+        }
+    }
+    button {
+        outline: none !important;
+
+    }
+    .fa-bars-staggered {
+        color: white;
+    }
+    .mobileNavbar {
+        background-color: white;
+        padding: 1em ;
+        border-radius: 0.6em;
+        margin-top: 1em;
+        box-shadow: 0px 25px 42px rgba(0, 0, 0 / 20%, 0.2);
+        @include desktop {
+            margin-top: 0;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+
+    li {
+        
+        font-size: 0.8rem;
+        a {
+            text-transform: uppercase;
+            color: black;
+            @include desktop {
+                color: white;
+            }
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}

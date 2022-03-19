@@ -1,0 +1,58 @@
+.promotion {
+    background: $bggradient;
+    margin-top: 90px;
+
+    h2 {
+        text-transform: capitalize;
+        font-family: $Rubik;
+        font-family: $Patua;
+        font-size: 1.5rem;
+        padding-top: 50px;
+        @include tablets {
+            font-size: 1.9rem;
+        }
+        @include desktop {
+            font-size: 2.2rem;
+        }
+    }
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 2em;
+        text-transform: capitalize;
+        @include tablets {
+            padding: 0 50px 25px;
+            line-height: 2em;
+        }
+    }
+    &_cta {
+        @include tablets {
+            align-items: center !important;
+        }
+        .cta_wrapper {
+            cursor: pointer;
+            background-color: white;
+            border-radius: 45px;
+            padding-left: 30px;
+            padding-right: 30px;
+           @include desktop {
+            padding-left: 50px;
+            padding-right: 50px;
+           }
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.719);
+            }
+            i {
+                font-size: 40px;
+            }
+            .cta_text {
+                h3 {
+                    margin-bottom: -0.3em !important;
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+footer {
+    i {
+        animation: bouns 1s linear infinite;
+        background: $bggradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @keyframes bouns {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.4);
+        }
+      
+        100% {
+            transform: scale(1);
+        }
+    }
+   
+}
